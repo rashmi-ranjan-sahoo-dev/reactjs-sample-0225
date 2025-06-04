@@ -23,7 +23,7 @@ const Main = () => {
 
   return (
     <div 
-    className={isDarkMode ?"min-h-screen   dark:bg-gray-900  transition-all duration-300" : "min-h-screen   bg-white  transition-all duration-300"}>
+    className="min-h-screen   bg-white  transition-all duration-300">
       <Header sendDataToApp = {recevedData} />
       {isLoggedIn ? <Body/> : <Outlet/>}
     </div>

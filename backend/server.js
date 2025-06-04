@@ -10,7 +10,7 @@ const { TaskRoute } = require("./routes/tasks")
 app.use(express.json());
 app.use(cors())
 app.use("/api/v1/users",UserRoute)
-app.use("/api/v1/todos",TaskRoute)
+app.use("/api/v1/tasks",TaskRoute)
 
 async function main() {  
     await mongoose.connect(process.env.DB_KEY)

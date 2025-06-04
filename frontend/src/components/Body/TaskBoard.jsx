@@ -74,7 +74,7 @@ async function toggleDone(task) {
     const token = localStorage.getItem("token")
     try {
       await axios.put("http://localhost:3000/api/v1/tasks/taskToggle",{
-      todoId: task._id,
+      taskId: task._id,
       isDone: !task.isDone
     }, {
       headers: { token }
@@ -100,7 +100,7 @@ async function toggleDone(task) {
       await axios.put(
         "http://localhost:3000/api/v1/tasks/task",
         {
-          todoId: editingTask._id,
+          taskId: editingTask._id,
           title:title,
           detail:detail,
           isDone:isDone,
