@@ -1,6 +1,4 @@
 import React, { useContext, useState } from 'react'
-import { FaRegMoon } from "react-icons/fa";
-import { FaRegSun } from "react-icons/fa6";
 import { MdManageAccounts } from "react-icons/md";
 import Auth from './Authentication/Auth';
 import { AuthContext } from './Authentication/context/AuthProvider';
